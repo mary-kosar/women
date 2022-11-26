@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Semibold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('/fonts/Georgia-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
