@@ -93,7 +93,8 @@ h1, p {
 
  /* header */
 
-label {
+label,
+input {
     display: none;
 }
 
@@ -544,19 +545,51 @@ label {
             transform: translateY(3px);
         }
 
-        #toggler:checked>.burger .bun--top {
+        #toggler:checked~.burger .bun--top {
             transform: rotate(45deg);
         }
 
-        #toggler:checked>.burger .bun--bottom {
+        #toggler:checked~.burger .bun--bottom {
             transform: rotate(-45deg);
         }
 
-        #toggler:checked>.burger .bun__crust--top,
-        #toggler:checked>.burger .bun__crust--bottom {
+        #toggler:checked~.burger .bun__crust--top,
+        #toggler:checked~.burger .bun__crust--bottom {
             transform: none;
             transition: transform .1806s
             cubic-bezier(0.04, 0.06, 0.12, 0.96);
+        }
+
+        .nav {
+            display: block;
+            text-align: center;
+            position: fixed;
+            top: 74px;
+            left: 0px;
+            padding: 20px;
+            width: 130px;
+            height: 155px;
+            border-radius: var(--b-radius-btn);
+            background-color: var(--c-bg);
+            transform: translateX(-200%);
+            transition: .3s all ease-in-out;
+            z-index: 2;
+        }
+    
+        .nav__ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 0;
+        }
+
+        .nav__a {
+            color: var(--c-white);
+        }
+
+        #toggler:checked~.nav {
+            transform: translateX(0);
+            transform: translateY(25px);
         }
         /* burger end */
 }
